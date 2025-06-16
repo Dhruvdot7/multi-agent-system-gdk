@@ -2,7 +2,7 @@ import google.generativeai as genai
 
 class SummaryAgent:
     def __init__(self):
-        genai.configure(api_key="AIzaSyD5eBnPdiWn4aOpM_RYTFPLYq9oxWOng4c")  # Replace with your real key
+        genai.configure(api_key="Your API key")  # Replace with your real key
         self.model = genai.GenerativeModel("gemini-1.5-flash")  # ← set the model here
 
     def generate_summary(self, launch_data, weather_data):
